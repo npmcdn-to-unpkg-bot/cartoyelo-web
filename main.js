@@ -1,7 +1,7 @@
 /*jslint browser: true */
-/*global L */
+/*globals L, jQuery */
 
-(function () {
+(function ($) {
     'use strict';
 
     var map;
@@ -19,4 +19,4 @@
             'OpenStreetMap' +
             '</a>'
     }).addTo(map);
-}());
+}(jQuery));
