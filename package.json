@@ -1,0 +1,20 @@
+{
+  "name": "cartoyelo-web",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoCartier/cartoyelo-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrunoCartier/cartoyelo-web/issues"
+  },
+  "homepage": "https://github.com/BrunoCartier/cartoyelo-web#readme",
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0"
+  }
+}
