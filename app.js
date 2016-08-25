@@ -1,4 +1,5 @@
-/*jslint node: true */
+/*jslint node: true, nomen: true */
+// Source: https://github.com/expressjs/generator/blob/master/templates/js/app.js
 
 'use strict';
 
@@ -12,11 +13,13 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
+    /*jslint unparam: true */
     return res.render('index.html');
 });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
+    /*jslint unparam: true */
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
@@ -28,6 +31,7 @@ app.use(function (req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
+        /*jslint unparam: true */
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,
@@ -39,6 +43,7 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
+    /*jslint unparam: true */
     res.status(err.status || 500);
     res.render('error', {
         message: err.message,
